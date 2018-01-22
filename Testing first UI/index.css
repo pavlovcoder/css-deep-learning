@@ -1,0 +1,288 @@
+/* First testing block: */
+* {
+    font-family:sans-serif;
+}
+
+fieldset {
+    margin-top: 10px;
+}
+
+ul > :first-child {
+    border: 1px groove #000000;
+    padding: 2px 5px;
+    background-color: #fff245;
+}
+
+/* Second testing block: */
+/*1) Unvisited link: */
+a:link {
+    color: #9966ff;
+}
+
+/*2) Visited link: */
+a:visited {
+    color: #ff0066;
+}
+
+/*3) Hover link: */
+a:hover {
+    color: #000000;
+}
+
+/*4) Activated link: */
+a:active {
+    color: #e60000;
+}
+
+/* Third testing block about simple tooltip: */
+.dropdown-menu {
+    width: 162.234px;
+}
+
+.simple-tooltip {
+    padding: 15px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 10px #b3b3b3;
+    background-color: #ffffff;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+    width: inherit;
+    margin-bottom: 0;
+}
+
+.simple-tooltip:hover {
+    background-color: #f2f2f2;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+i {
+    border: solid #000000;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 8px;
+}
+
+.arrow {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.down {
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.sm-icons {
+    height: 25px;
+    width: 25px;
+}
+
+.sm-icons:hover {
+    opacity: 0.5;
+}
+
+.sm-icons-section {
+    text-align: center;
+    border-top: 0.5px solid #cccccc;
+    border-bottom: 0.5px solid #cccccc;
+    padding-bottom: 20px;
+}
+
+.visible-content {
+    margin-top: -12px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #ffffff 0%, #d9d9d9 100%);
+    color: #808080;
+    float: left;
+    width: inherit;
+    transition: height 0.7s linear 0.3s;
+    -webkit-transition: height 0.7s linear 0.3s; 
+    -moz-transition: height 0.7s linear 0.3s;
+    -o-transition: height 0.7s linear 0.3s;
+    height: 0;
+}
+
+.visible-content > ul {
+    list-style: none;
+    padding-left: 0;
+    width: inherit;
+}
+
+.visible-content ul > :first-child {
+    border: 1px solid transparent;
+    padding: 15px 20px;
+    background-color: inherit;
+}
+
+.visible-content ul > :first-child:hover {
+    border-top-color: transparent;
+    border-bottom: 1px solid #404040;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+.visible-content ul > :last-child:hover {
+    border-color: transparent;
+}
+
+.visible-content ul > :nth-child(9):hover{
+    border-color: transparent;
+}
+
+.visible-content li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+    border: 1px solid transparent;
+}
+
+.visible-content li:hover {
+    color: #000000;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.visible-content li:hover {
+    border-top: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+/* Prepare a special animation-effect for the transform height of dropdown menu: */
+.dropHeight {
+    height: 596px;
+    transition: height 0.7s linear 0.1s;
+    -webkit-transition: height 0.7s linear 0.1s;
+    -moz-transition: height 0.7s linear 0.1s;
+    -o-transition: height 0.7s linear 0.1s;
+}
+
+.contentOfList {
+    opacity: 0;
+    transition: opacity 0.5s linear 0.1s ;
+    -webkit-transition: opacity 0.5s linear 0.1s;
+    -moz-transition: opacity 0.5s linear 0.1s;
+    -o-transition: opacity 0.5s linear 0.1s;
+}
+
+.showContent {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s linear 0.6s;
+    -moz-transition: opacity 0.5s linear 0.6s;
+    -o-transition: opacity 0.5s linear 0.6s;
+}
+
+.btn-auth {
+    text-align: center;
+}
+
+.outline-heading {
+    margin-top: 620px;
+}
+
+.table-outline {
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+
+.table-outline-row {
+    display: table-row;
+}
+
+.table-outline-cell:first-child {
+    display: table-cell;
+    border: 1px solid #cccccc;
+    text-align: center;
+    padding: 15px;
+}
+
+.table-outline-cell {
+    display: table-cell;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.table-outline-cell:hover {
+    background-color: #cccccc;
+    outline: 4px solid #808080;
+    outline-offset: 5px;
+    transition: .2s linear;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -o-transition: .2s linear;
+}
+
+.background-list {
+    margin-top: 40px;
+    background-image: url(lib/backgrounds/Las-vegas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+}
+
+.background-list-ctn {
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 25vh;
+    background: rgba(255,255,0,0.6);
+    position: relative;
+    padding: 20px;
+    outline: 1px double #000000;
+}
+
+.background-list-ul {
+    text-align: left;
+    list-style: circle inside url(lib/list-items/list-items-2.gif);
+}
+
+.background-list-ul > li:first-child {
+    background: transparent;
+    border: none;
+    padding-left: 0;
+}
+
+.background-list-ul > li:hover {
+    outline: 3px solid red;
+    cursor: pointer;
+}
+
+
