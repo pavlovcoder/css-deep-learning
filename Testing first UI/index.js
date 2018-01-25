@@ -22,7 +22,6 @@ function showDropdownList(show){
     } else {
         dropList[0].classList.toggle('dropHeight',true);
     }
-    console.log('Class name of dropList = ' + dropList[0].className);
 }
 
 function showContentOfList(show){
@@ -41,28 +40,16 @@ dropList[0].addEventListener("mouseout",function(){
     arrow[0].classList.toggle('down',false);
 });
 
-//Add new sound-effects of click for different buttons:
-/*var soundSource = new Audio('button-click.mp3');
-document.getElementsByTagName("LI")[21].addEventListener("mouseover",function(){
-    soundSource.play();
-    console.log("Audio files: " + soundSource);
-});*/
+var chatIcon = document.getElementsByClassName("material-icons chat-icon");
+var helpMessage = document.getElementsByClassName("help-message");
+document.getElementsByClassName("chat-help")[0].onmouseover = function(){
+  chatIcon[0].innerHTML = "chat";
+  chatIcon[0].style.transition = ".5s ease-out";
+  helpMessage[0].classList.toggle('hideWidth',true);
+}
 
-/*var btnClickSound = {
-    elements : [20,21,22,23,24],
-    soundSource : new Audio('button-click.mp3'),
-    playSound : function(){
-        var i;
-        for(i in this.elements ){
-            document.getElementsByTagName("LI")[23].addEventListener("mouseover",function(){
-                this.soundSource.play();
-            });
-        }
-    }
-}*/
-
-document.getElementsByTagName("LI")[20].addEventListener("mouseover",function(){
-    
-})
-
-
+document.getElementsByClassName("chat-help")[0].onmouseout = function(){
+  chatIcon[0].innerHTML = "help";
+  chatIcon[0].style.transition = ".5 ease-out";
+  helpMessage[0].classList.toggle('hideWidth',false);
+}
