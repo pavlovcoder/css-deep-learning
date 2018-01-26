@@ -463,3 +463,45 @@ i {
 .inBtn:focus, .nameSurname:focus, #password:focus {
   outline: none;
 }
+
+/* Customize sticky-header panel: */
+.sticky-header {
+  list-style-type: none;
+  position: sticky;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ff99ff 0%, #660066 100%);
+}
+
+.sticky-header li {
+  float: left;
+}
+
+.sticky-header li:first-child {
+  background: linear-gradient(to bottom, #ff99ff 0%, #660066 100%);
+  border: none;
+}
+
+.sticky-header li:last-child {
+  float: right;
+}
+
+.sticky-header li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.further-ctn {
+  height: 3000px;
+}
+
+body {
+  margin: 0;
+}
