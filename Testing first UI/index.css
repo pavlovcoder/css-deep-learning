@@ -914,6 +914,106 @@ body {
     clear: both;
 }
 
+.tooltip-block div p {
+    display: none;
+    background-color: hsl(151, 100%, 50%);
+    color: hsl(151, 100%, 20%);
+    padding: 20px;
+}
+
+.tooltip-block div:hover p {
+    display: block;
+}
+
+.tooltip-block div {
+    width: 40%;
+    margin: 20px auto;
+    border: 3px double hsl(151, 100%, 20%);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.pseudo-class-block {
+    margin: 20px auto;
+    width: 50%;
+    border: 3px double hsl(200, 0%, 60%);
+    padding: 20px;
+}
+
+.pseudo-class-block q {
+    padding: 10px;
+    color: #ffffff;
+    margin: auto 100px;
+    border-bottom: 1px solid hsl(200, 0%, 60%);
+    line-height: 2;
+}
+
+.pseudo-class-block q:lang(en) {
+    background-color: hsl(243, 48%, 59%);
+}
+
+.pseudo-class-block q:lang(pl) {
+    background-color: hsl(26, 48%, 59%);
+}
+
+.pseudo-class-block q:lang(ch) {
+    background-color: hsl(0, 48%, 59%);
+}
+
+.pseudo-class-block q:lang(ru) {
+    background-color: hsl(180, 48%, 59%);
+}
+
+.btn-types {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.btn-types ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+
+.btn-types ul li {
+    padding: 10px 20px;
+    width: 28%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    float: left;
+}
+
+.btn-types ul li:hover {
+    background-color: hsl(40, 100%, 100%);
+}
+
+.btn-types ul li:active {
+    background-color: hsl(50, 90%, 60%);
+}
+
+.btn-types ul li a {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+
+.btn-types ul li:first-child {
+    background-color: hsl(356, 90%, 60%);
+}
+
+.btn-types ul li:nth-child(2) {
+    background-color: hsl(30, 90%, 60%);
+}
+
+.btn-types ul li:last-child {
+    background-color: hsl(240, 90%, 60%);
+}
+
 @media (max-width: 900px) {
     .combinators-table-cell {
         width: 45%;
