@@ -314,11 +314,68 @@
                         <label for="lname">Surname</label>
                         <input type="text" name="lname" id="lname" placeholder="Spacey"/>
                     </p>
+                    <hr />
                     <p>
                         <p>What films do you like ?</p>
                         <input type="checkbox" name="filmtype1" value="western" /> Westerns <br />
                         <input type="checkbox" name="filmtype2" value="action" /> Actions <br />
                         <input type="checkbox" name="fimltype3" value="horrors" /> Horrors <br />
+                        <input type="checkbox" name="filmtype4" value="scifi" /> Science Fiction <br />
+                        <input type="checkbox" name="filtype5" value="thriller" /> Thriller <br />
+                        <input type="checkbox" name="filmtype6" value="melodrammas" /> Melodrammas <br />
+                        <input type="checkbox" name="filmtype7" value="cartoon" /> Cartoon <br />
+                    </p>
+                    <hr />
+                    <p>
+                        <p>Write few sentences about yourself</p>
+                        <textarea name="about-yourself" rows="10" placeholder="Write few sentences..." id="about-text" disabled></textarea>
+                    </p>
+                    <hr />
+                    <p id="calc-length">Calculate a length of circle: L = 2πr</p>
+                    <p>
+                        <label for="lcircle">Please, provide radius of circle r = </label>
+                        0 <input type="range" id="lcircle" value="0" min="0" max="500" /> 500
+                        <p>
+                            L = 2 ∗ π ∗ <span id="lcircle-val"></span>
+                            <output name="L" for="lcircle" id="lcircle-output"></output>
+                        </p>
+                    </p>
+                    <hr />
+                    <p>
+                        <label for="fav-shape">Please, provide your the most favorite geometrical shape</label>
+                        <input type="text" name="favShape" id="fav-shape" placeholder="square" autofocus />
+                    </p>
+                    <hr />
+                    <p>
+                        <label for="pr-price">Please, provide your preferable range of price between $1000 and $100000</label>
+                        <p>
+                            <input type="number" name="prPrice" id="pr-price" value="0" min="1000" max="1000000" />
+                        </p>
+                    </p>
+                    <hr />
+                    <p>
+                        <label for="email-provide">Please, provide your personal email, for getting the last news</label>
+                        <p>
+                            <input type="email" id="email-provide" />
+                            <button type="submit" value="email-submit" class="email-btn">Submit email</button>
+                        </p>
+                    </p>
+                    <hr />
+                    <p>
+                        <label for="birthday-day">Please, enter your birthday time and date: </label>
+                        <p>
+                            <input type="datetime-local" name="birthday-day" id="birthday" />
+                        </p>
+                        <label for="birthday-city">Please, provide your city of birthday: </label>
+                        <input type="text" name="birthdayCity" id="birthday-city" readonly value="San-Francisko" />
+                        <p>
+                            <label for="mob-number">Please, provide your mobile number:  </label>
+                            <input type="tel" name="mob-number" id="mob-number" maxlength="12" required/>
+                        </p>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Reset" />
                     </p>
                 </fieldset>
             </form>
