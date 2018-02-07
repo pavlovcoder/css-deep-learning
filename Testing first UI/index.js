@@ -53,3 +53,26 @@ document.getElementsByClassName("chat-help")[0].onmouseout = function(){
   chatIcon[0].style.transition = ".5 ease-out";
   helpMessage[0].classList.toggle('hideWidth',false);
 }
+
+window.onscroll = function() {
+    var header = document.getElementsByClassName("sticky-header");
+    var uHeader = document.getElementsByClassName("mainmenu");
+    var pH = document.getElementsByClassName("float-block");
+    var H = document.body.scrollHeight - pH[0].scrollHeight;
+    if(document.body.scrollTop > H) {
+        header[0].classList.toggle('hide-stick',true);
+        uHeader[0].classList.toggle('stick-header',true);
+    } else {
+        header[0].classList.toogle('hide-stick',false);
+        uHeader[0].classList.toggle('stick-header',false);
+    }
+}
+
+//Creation a mini-script for calculation length of circle:
+var lcircle = document.getElementById("lcircle");
+var lcircleOut = document.getElementById("lcircle-val");
+var lcircleOutput = document.getElementById("lcircle-output");
+lcircle.oninput = function() {
+    lcircleOut.innerHTML = lcircle.value + '(m)';
+    lcircleOutput.innerHTML = 'L = ' + 2 * Math.PI * lcircle.value + '(m)';
+}
