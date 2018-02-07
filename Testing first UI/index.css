@@ -1014,6 +1014,75 @@ body {
     background-color: hsl(240, 90%, 60%);
 }
 
+#about-text {
+    width: 100%;
+}
+
+#calc-length {
+    padding: 10px;
+    background-color: hsl(0, 100%, 45%);
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#lcircle-val {
+    color: hsl(0, 100%, 45%);
+}
+
+textarea:disabled {
+    background-color: hsl(0, 100%, 30%);
+    color: #ffffff;
+}
+
+input:enabled {
+    outline: 2px solid hsl(240, 0%, 45%);
+    padding: 5px 10px;
+}
+
+input:focus {
+    background-color: hsl(60, 100%, 45%);
+    color: hsl(240, 0%, 45%);
+}
+
+input:in-range {
+    background-color: hsl(130, 100%, 45%);
+    color: #ffffff;
+}
+
+input:out-of-range {
+    background-color: hsl(0, 100%, 30%);
+    color: #ffffff;
+}
+
+input {
+    border: none;
+}
+
+#email-provide:valid {
+    background-color: hsl(115, 34%, 45%);
+    color: #ffffff;
+}
+
+#email-provide:invalid {
+    background-color: hsl(357, 34%, 45%);
+    color: #ffffff;
+}
+
+#birthday-city:read-only {
+    outline: 2px solid hsl(0, 100%, 30%);
+    outline-offset: 5px;
+}
+
+#birthday:read-write {
+    outline: 2px solid hsl(115, 34%, 45%);
+    outline-offset: 5px;
+}
+
+input:required {
+    outline: 2px solid red;
+    outline-offset: 5px;
+}
+
 @media (max-width: 900px) {
     .combinators-table-cell {
         width: 45%;
