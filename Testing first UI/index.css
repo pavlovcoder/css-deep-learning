@@ -673,7 +673,6 @@ body {
     -moz-transition: border 0.2s ease;
     -o-transition: border 0.2s ease;
 }
-}
 
 .buildmenu li a:active {
     background-color: #99004d;
@@ -1242,6 +1241,119 @@ input:required {
 
 .container {
     padding: 2px 15px;
+}
+
+.after-element, .before-element, .first-letters, .first-lines {
+    display: block;
+    border: 2px solid hsl(130, 100%, 45%);
+    margin: 20px 200px;
+    padding: 20px;
+}
+
+.before-element {
+    border: 2px solid hsl(280, 50%, 50%);
+}
+
+.first-letters {
+    border: 2px solid hsl(25, 50%, 50%);
+}
+
+.first-lines {
+    border: 2px solid hsl(180, 50%, 50%);
+}
+
+.after-element p::after {
+    content: url(warning.png);
+    margin-left: 5px;
+}
+
+.after-element p:nth-child(2)::after {
+    content: none;
+}
+
+.after-element p:last-child::after {
+    content: url(warning2.png);
+}
+
+.before-element p:nth-child(3)::before {
+    content: url(physics.png);
+}
+
+.before-element p:nth-child(4)::before {
+    content: url(one.png);
+}
+
+.before-element p:nth-child(5)::before {
+    content: url(two.png);
+}
+
+.before-element p:nth-child(6)::before {
+    content: url(three.png);
+}
+
+.before-element p:last-child::before {
+    content: url(four.png);
+}
+
+.before-element p::before {
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rufina');
+
+.first-letters {
+    font-family: 'Rufina', serif;
+}
+
+.first-letters p:first-of-type::first-letter {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.first-letters p:nth-of-type(2)::first-letter {
+    font-size: 40px;
+    color: hsl(0, 100%, 50%);
+}
+
+.first-letters p:last-of-type::first-letter {
+    font-family: 'Rufina', serif;
+    font-size: 35px;
+    color: hsl(35, 100%, 55%);
+}
+
+.first-lines p:first-of-type::first-line {
+    background-color: hsl(130, 100%, 45%);
+    text-decoration: underline;
+}
+
+.first-lines p:last-of-type::first-line {
+    color: hsl(0, 100%, 35%);
+    font-weight: 600;
+}
+
+.opacity-ctn {
+    display: block;
+    margin: 20px 200px;
+    padding: 20px;
+    border: 2px solid #000000;
+    text-align: center;
+    float: left;
+}
+
+.opacity-img {
+    width: 30%;
+    height: 240px;
+    float: left;
+    margin: 0 18.5px;
+}
+
+.opacity-ctn h4 {
+    border: 2px solid #ffffff;
+    background-color: hsl(218, 47%, 67%);
+    color: #ffffff;
+    margin: 20px 200px;
+    padding: 20px;
 }
 
 @media (max-width: 900px) {
