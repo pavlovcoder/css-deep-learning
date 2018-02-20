@@ -76,3 +76,7 @@ lcircle.oninput = function() {
     lcircleOut.innerHTML = lcircle.value + '(m)';
     lcircleOutput.innerHTML = 'L = ' + 2 * Math.PI * lcircle.value + '(m)';
 }
+
+//For sidebar navigation panel:
+var sidePanel = document.getElementsByClassName("side-buttons");
+console.log(sidePanel[0].innerHTML);
