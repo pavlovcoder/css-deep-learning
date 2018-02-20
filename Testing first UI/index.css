@@ -1332,8 +1332,7 @@ input:required {
     font-weight: 600;
 }
 
-.opacity-ctn {
-    display: block;
+.opacity-ctn, .opacity-ctn2 {
     margin: 20px 200px;
     padding: 20px;
     border: 2px solid #000000;
@@ -1346,6 +1345,7 @@ input:required {
     height: 240px;
     float: left;
     margin: 0 18.5px;
+    cursor: pointer;
 }
 
 .opacity-ctn h4 {
@@ -1354,6 +1354,64 @@ input:required {
     color: #ffffff;
     margin: 20px 200px;
     padding: 20px;
+}
+
+.opacity-img:hover {
+    opacity: 0.5;
+    filter: alpha(oapcity=50); /* For IE8 and earlier! */
+}
+
+.side-menu {
+    margin: 460px 200px 20px 200px;
+    border: 2px solid hsl(123, 100%, 50%);
+    height: 500px;
+    display: block;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: hsl(123, 100%, 50%);
+    height: 100%;
+    overflow: auto;
+    float: left;
+}
+
+.side-menu li a {
+    display: block;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+.side-menu li a.active-btn {
+    background-color: hsl(123, 100%, 35%);
+    font-weight: 600;
+}
+
+.side-menu li a:hover:not(.active-btn) {
+    background-color: hsl(123, 100%, 40%);
+}
+
+.news, .contact, .about {
+    display: none;
+}
+
+.content-ctn {
+    padding: 5px 15px;
+    margin-left: 25%;
+    height: 100%;
+    display: none;
+}
+
+.content-ctn:target {
+    display: block;
 }
 
 @media (max-width: 900px) {
